@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="300.0" minWidth="500.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8db600;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.itis.zaripov.userInterface.GUIversion.controllers.PermutationWindowController">
+   <children>
+      <AnchorPane layoutY="53.0" prefHeight="347.0" prefWidth="600.0" style="-fx-background-color: #a4c639; -fx-background-radius: 15;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="14.0" text="Permutation" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitButton" layoutX="14.0" layoutY="321.0" mnemonicParsing="false" onAction="#goBack" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #008000; -fx-background-radius: 7; -fx-border-color: #006a4e; -fx-border-radius: 7; -fx-border-width: 4;" text="Exit" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="computeButton" layoutX="434.0" layoutY="321.0" mnemonicParsing="false" onAction="#compute" prefHeight="45.0" prefWidth="128.0" style="-fx-background-color: #008000; -fx-background-radius: 7; -fx-border-color: #006a4e; -fx-border-radius: 7; -fx-border-width: 4;" text="Compute" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="105.0" fitWidth="141.0" layoutX="208.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox alignment="TOP_CENTER" layoutX="92.0" layoutY="159.0" prefHeight="73.0" prefWidth="480.0" spacing="15.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <children>
+                  <TextField fx:id="n" prefHeight="37.0" prefWidth="115.0" promptText="n">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="k" prefHeight="37.0" prefWidth="115.0" promptText="k1 k2 ...">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </HBox>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="74.0" text="Enter the parameters" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="-13.0" layoutY="63.0" prefHeight="110.0" prefWidth="151.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="90.0">
+               <children>
+                  <ImageView fitHeight="78.0" fitWidth="150.0" layoutX="44.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../images/formulaImages/withoutRep/PermutationImage.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="74.0" text="without repetitions" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="266.0" layoutY="91.0" prefHeight="110.0" prefWidth="256.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="91.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="256.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../images/formulaImages/withRep/PermutationWithRepImage.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="71.0" text="with repetitions" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

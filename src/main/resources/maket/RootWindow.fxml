@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="300.0" minWidth="500.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8db600;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.itis.zaripov.userInterface.GUIversion.controllers.BaseWindowController">
+   <children>
+      <AnchorPane layoutY="53.0" prefHeight="347.0" prefWidth="600.0" style="-fx-background-color: #a4c639; -fx-background-radius: 15;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ButtonBar layoutX="93.0" layoutY="55.0" prefHeight="40.0" prefWidth="369.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="100.0">
+              <buttons>
+                  <Button fx:id="permutationWindButt" mnemonicParsing="false" onAction="#openPermutWindow" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #008000; -fx-background-radius: 7; -fx-border-color: #006a4e; -fx-border-radius: 7; -fx-border-width: 4;" text="permutation" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="combinationWindButt" mnemonicParsing="false" onAction="#openCombinWindow" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #008000; -fx-background-radius: 7; -fx-border-color: #006a4e; -fx-border-radius: 7; -fx-border-width: 4;" text="combination" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="placementWindButt" mnemonicParsing="false" onAction="#openPlacemWindow" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #008000; -fx-background-radius: 7; -fx-border-color: #006a4e; -fx-border-radius: 7; -fx-border-width: 4;" text="placement" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="14.0" text="Please, choose the operation you want to compute." textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
